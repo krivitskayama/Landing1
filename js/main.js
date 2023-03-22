@@ -8,12 +8,13 @@ const startSlider=()=>{
   let position=0;
   
   const nextSlide=()=>{
+    if (activeSlide==4){
       sliderItems[activeSlide].classList.remove("slider__item_active");
      
       position=-sliderItems[0].clientWidth*activeSlide;
       sliderList.style.transform = `translateX(${position}px)`
       activeSlide+=1;
-      sliderItems[activeSlide].classList.add("slider__item_active");
+      sliderItems[activeSlide].classList.add("slider__item_active");};
   }
   const prevSlide=()=>{
       sliderItems[activeSlide].classList.remove("slider__item_active");
