@@ -28,7 +28,18 @@ body{
 .new_hidden{
   width: 150px;
 }
-
+.like{
+  background-image: url(../img/like.png);
+  width: 100px;
+  height: 100px;
+  background-size: 100%;
+}
+.dislike{
+  background-image: url(../img/dislike.png);
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+}
 img{
   max-width: 100%;
   height: auto;
