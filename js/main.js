@@ -33,3 +33,5 @@
 };
 
 document.addEventListener("DOMContentLoaded",startSlider)
+const t=document.querySelector(".like");
+t.addEventListener("click",()=>{t.classList.toggle("dislike")});
