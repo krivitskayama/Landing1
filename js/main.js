@@ -33,7 +33,7 @@
 };
 
 window.addEventListener("load",()=>{
-    slider.classList.remove("preload");
+    slider.classList.toggle("preload");
     sliderContainer.style.display='';
     startSlider();
 })
