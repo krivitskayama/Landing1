@@ -32,6 +32,17 @@
   nextbtn.addEventListener("click",nextSlide);
 };
 
-document.addEventListener("DOMContentLoaded",startSlider)
+window.addEventListener("load",()=>{
+    slider.classList.remove("preload");
+    sliderContainer.style.display='';
+    startSlider();
+})
+
 const t=document.querySelector(".like");
 t.addEventListener("click",()=>{t.classList.toggle("dislike")});
+
+const slider=document.querySelector(".slider");
+const sliderContainer=document.querySelector(".clider__container");
+sliderContainer.style.display='none';
+slider.classList.add("preload");
+
